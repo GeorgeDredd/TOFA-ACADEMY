@@ -47,6 +47,27 @@ h6 {
 
 }
 
+/* General */
+#features,
+#courses,
+#team
+{
+    color: rgb(46, 46, 59);
+    color: #071133;
+    padding: 6vw 8vw 0 8vw;
+}
+
+.features-div,
+.courses-div,
+.team-profile-div
+ {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
+    gap: 1rem;
+    margin-top: 50px;
+}
+
 
 /* Nav*/
 nav {
@@ -99,7 +120,7 @@ nav .links ul li a:hover{
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/ft-bg-2.jpg");
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/ft-bg-3.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -118,9 +139,16 @@ header h2 {
 
 header p {
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 50%;
-    line-height: 25px;
+    line-height: 30px;
+}
+
+header span {
+    color: #ff6e40;
+    font-size: 2.2rem;
+    /* font-size: 1.1rem; */
+
 }
 
 .btn {
@@ -131,7 +159,7 @@ header p {
     color: #fff;
     text-decoration: none;
     background-color: #fff;
-    padding: 10px 30px;
+    padding: 13px 35px;
     border-radius: 5px;
     font-weight: 600;
     transition: 0.3s ease;
@@ -148,12 +176,12 @@ header p {
     color: #071133;
 }
 
-.btn .btn-yellow {
+.btn .btn-orange {
     background-color: #FDC93B; 
     background-color: #ff6e40;
 }
 
-.btn .btn-yellow:hover {
+.btn .btn-orange:hover {
     background-color: #ffffff;
     color:  rgb(21, 21, 100);
     color: #071133;
@@ -168,28 +196,17 @@ header p {
     align-items: center;
 }
 
-#features,
-#courses
-{
-    color: rgb(46, 46, 59);
-    color: #071133;
-    padding: 5vw 8vw 0 8vw;
-}
 
 #features h3{
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.features-div,
-.courses-div
- {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(32%, 1fr));
-    gap: 1rem;
-    margin-top: 50px;
+h3 .smile {
+    color: #ff6e40;
 }
+
+
 
 .features-item {
     background: #F9F9FF;
@@ -207,11 +224,11 @@ header p {
 
 
 /* Courses */
-
 .courses-item {
     height: 100%;
     background-color: #F9F9FF;
     position: relative;
+    cursor: pointer;
 
 }
 
@@ -246,7 +263,150 @@ header p {
     font-size: .9rem;
 }
 
+/* Registration */
+
+#registration {
+    width: 100%;
+    /* height: 100vh; */
+    /* background-image: linear-gradient(rgba(99, 112, 168, 0.5), rgba(81, 91, 233, 0.5)), url("images/ft-bg-2.jpg"); */
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/ft-bg-2.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw 8vw;
+    margin-top: 50px ;
+    
+}
+
+#registration .reminder p, 
+#registration .reminder h1 {
+    color: #fff;
+}
+
+#registration .reminder .days {
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#registration .reminder .days .time {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    padding: 13px 33px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: 1px solid #ffffff;
+    /* box-shadow: 0 8px 32px #888; */
+    /* border: 1px solid rgba(255, 255, 255, 0.25); */
+    /* box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); */
+}
+
+#registration .form-div  {
+   background-color: #ffffff;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 8px 32px #888888;
+   width: 30%
+}
 
 
+#registration .form-div form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#registration .form-div form h3{
+    font-weight: 600;
+    text-transform: capitalize;
+    /* font-variant: small-caps; */
+}
+
+#registration .form-div form input{
+   padding: 15px 10px;
+   border: 1px solid #071133;;
+   outline: none;
+   font-family: Poppins;  
+   transition: 0.3s ease; 
+}
+
+#registration .form-div form input:focus{
+    border: 1px solid #ff6e40
+ }
+  
+ 
+#registration .form-div form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: .9rem;
+    font-family: Poppins;
+ }
 
 
+ #registration .form-div form input[type=submit] {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff6e40;
+    border: none;
+    padding: 13px 35px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    width: fit-content;
+}
+
+#registration .form-div form input[type=submit]:hover {
+    background-color: #071133;
+    
+}
+
+/* Team  */
+
+#team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team .team-profile-div {
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+}
+
+#team .team-profile  {
+    padding: 30px 10px;
+    background-color: #fafaf1;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#team .team-profile img {
+    width: 80%;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px solid #eee;
+}
+
+.profile-link {
+    margin-top: 10px;
+}
+
+.profile-link i {
+    padding: 10px 15px;
+    border: 1px solid #071133;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+
+.profile-link i:hover {
+    color: #ffffff;
+    background-color:  #071133;
+}
