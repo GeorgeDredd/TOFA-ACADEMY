@@ -31,7 +31,6 @@ h1 {
     font-weight: 700;
     text-transform: capitalize;
     /* font-family: 'Abril Fatface', serif; */
-    color: rgb(35, 35, 85);
     color: #071133;
 }
 
@@ -42,7 +41,6 @@ span {
 
 h6 {
     font-size: 1.1rem;
-    color: rgb(24, 24, 49);
     color: #071133;
 
 }
@@ -52,7 +50,6 @@ h6 {
 #courses,
 #team
 {
-    color: rgb(46, 46, 59);
     color: #071133;
     padding: 6vw 8vw 0 8vw;
 }
@@ -101,7 +98,6 @@ nav .links ul {
 
 nav .links ul li a{
     text-decoration: none;
-    color: rgb(21, 21, 100);
     color: #071133;
     font-size: 16px;
     font-weight: 700;
@@ -110,7 +106,6 @@ nav .links ul li a{
 
 nav .links ul li a:hover{
     text-decoration: none;
-    color: #FDC93B;
     color: #ff6e40;
 }
 
@@ -166,24 +161,20 @@ header span {
 }
 
 .btn .btn-blue {
-    background-color: rgb(21, 21, 100);
     background-color: #071133;
 }
 
 .btn .btn-blue:hover {
     background-color: #ffffff;
-    color: rgb(21, 21, 100);
     color: #071133;
 }
 
 .btn .btn-orange {
-    background-color: #FDC93B; 
     background-color: #ff6e40;
 }
 
 .btn .btn-orange:hover {
     background-color: #ffffff;
-    color:  rgb(21, 21, 100);
     color: #071133;
 }
 
@@ -216,8 +207,6 @@ h3 .smile {
 
 .features-item i{
     font-size: 2rem;
-    color: rgb(44, 44, 80);
-    color: #071133;
     color: #ff6e40;
 
 }
@@ -363,8 +352,7 @@ h3 .smile {
 }
 
 #registration .form-div form input[type=submit]:hover {
-    background-color: #071133;
-    
+    background-color: #071133;   
 }
 
 /* Team  */
