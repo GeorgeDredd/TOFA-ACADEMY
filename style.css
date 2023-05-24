@@ -400,3 +400,73 @@ h3 .smile {
     color: #ffffff;
     background-color:  #071133;
 }
+
+
+/* footer {
+    padding: 8vw;
+    background-color:  #071133;
+    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+footer ul {
+    margin-top: 25px;
+}
+
+footer ul li{
+    color: grey;
+    margin-top: 10px;
+    cursor:pointer;
+    list-style-type: none;
+    transition: .5s;
+}
+
+footer ul li:hover{
+    color: #fff;
+}
+
+
+.footer-col p {
+    color: grey;
+    margin-top: 10px;
+}
+
+.footer-col .sub {
+    margin-top: 10px;
+    height: fit-content;
+}
+
+.footer-col input {
+   color: #ffffff;
+   padding: 15px 15px;
+   outline: none;
+   border: none;
+   background-color: #2952d7;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    flex-basis: 100%;
+}
+
+.footer-col .btn {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ff6e40;
+    color: #ffffff;
+    border: none;
+    padding:  12px 15px;
+    transition: 0.3s ease;
+}
+
+
+.footer-col .btn:hover {
+    background-color: #ffffff;
+    color: #071133;
+} */
