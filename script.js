@@ -3,7 +3,6 @@ const id = (idName) => {
     return document.getElementById(idName);
 };
 
-
 const day = id("day");
 const hrs = id("hrs");
 const mins = id("mins");
@@ -49,4 +48,8 @@ function countdownTimer () {
 
 }
 
-countdownTimer()
+countdownTimer();
+
+
+// Current Year
+document.getElementById("currentYear").innerText = new Date().getFullYear();
